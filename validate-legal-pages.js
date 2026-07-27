@@ -67,6 +67,7 @@ const preservationContract = [
   [/90-day claim window/i, /90 天认领窗口/],
   [/local-only.*recovery risk/i, /仅保存在本地.*恢复风险/],
   [/permanently free/i, /永久免费/],
+  [/60 preservation months/i, /60 个封存月/],
   [/ten preservation years/i, /10 个封存年/],
   [/Offer Code/i, /Offer Code/],
   [/administrative grant/i, /后台人工发放/],
