@@ -1,80 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – Capsoul</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-           max-width: 720px; margin: 48px auto; padding: 0 24px;
-           color: #1a1a1a; line-height: 1.7; }
-    h1 { font-size: 2rem; margin-bottom: 4px; }
-    .subtitle { color: #666; margin-bottom: 40px; font-size: 0.9rem; }
-    h2 { font-size: 1.15rem; margin-top: 36px; }
-    p, li { font-size: 0.95rem; }
-    ul { padding-left: 20px; }
-    a { color: #8B6F5E; }
-    footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #eee;
-             font-size: 0.82rem; color: #999; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy — Capsoul</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="support.html">Capsoul</a>
+    <nav class="nav-row" aria-label="Policy navigation">
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="preservation.html">Paid Preservation</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <nav class="language" aria-label="Language">
+      <span aria-current="page">English</span> · <a href="privacy-zh.html" lang="zh-Hans">简体中文</a>
+    </nav>
+  </header>
 
-<h1>Privacy Policy</h1>
-<p class="subtitle">Last updated: July 10, 2026</p>
+  <main>
+    <p class="eyebrow">Shared memory capsule</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 27, 2026</p>
+    <p class="lede">Capsoul is a shared memory capsule for preserving ordinary fragments and reopening them with people you trust. This policy explains what we collect, why we use it, and the choices available to you.</p>
 
-<p>Capsoul ("we", "our", or "us") is a private time-capsule app that lets you seal memories and unlock them in the future. This policy explains what information we collect, why we collect it, and how we protect it.</p>
+    <h2>1. Information we collect</h2>
+    <ul>
+      <li><strong>Account and authentication information:</strong> email address, optional phone number, display name, avatar URL, user ID, sign-in method, account timestamps, verification and reset records, and Apple sign-in identifiers when used.</li>
+      <li><strong>Capsoul content:</strong> titles, text, emotion designs, photos, videos, voice recordings, files, music references, optional places, unlock timing, and whether the capsule is Personal or Shared.</li>
+      <li><strong>Sharing information:</strong> recipient contact details or user IDs, invitations, delivery status, opening status, opening progress, and withdrawal status.</li>
+      <li><strong>Purchases and preservation balances:</strong> product identifiers, verified App Store transaction identifiers, credited and consumed preservation units, quotes, grants, refunds, and reconciliation records. We do not receive your full payment-card details.</li>
+      <li><strong>Device and service information:</strong> APNs token, platform, app environment, preferred notification language, delivery records, operational logs, and errors needed to secure and troubleshoot the service.</li>
+      <li><strong>Optional location and recommendation inputs:</strong> a place name and coordinates you choose, and mood or context supplied for optional music recommendations. Capsoul does not continuously track your location.</li>
+      <li><strong>Safety information:</strong> the report category, optional details, capsule and account references, moderation status, and blocking relationships you choose to create.</li>
+    </ul>
 
-<h2>1. Information We Collect</h2>
-<ul>
-  <li><strong>Account information</strong> — your email address, optional phone number, display name, avatar URL, user ID, sign-in method, and account timestamps.</li>
-  <li><strong>Authentication information</strong> — email verification codes, password reset tokens, Apple sign-in identifiers if you choose Apple sign-in, and related security metadata needed to operate your account.</li>
-  <li><strong>Capsule content</strong> — title, text, emotion tags or custom emotion design, photos, videos, voice recordings, uploaded files, music references, optional location labels, and capsule unlock timing.</li>
-  <li><strong>Recipient information</strong> — recipient email addresses, phone numbers, user IDs, delivery status, and opening status for shared capsules.</li>
-  <li><strong>Device and notification information</strong> — push notification tokens, device platform, app environment, and notification delivery records used to send capsule, invite, cancellation, and account messages.</li>
-  <li><strong>Optional location information</strong> — if you add a place to a capsule, we store the place name and coordinates you choose. Capsoul does not continuously track your location.</li>
-  <li><strong>Optional AI/music request information</strong> — if you use music recommendation features, we may send capsule mood/context prompts to our CloudBase function to generate recommendations.</li>
-  <li><strong>Operational records</strong> — database records, email/SMS outbox entries, error information, and basic service logs needed to run, secure, and troubleshoot Capsoul.</li>
-</ul>
+    <h2>2. How we use information</h2>
+    <p>We use information to authenticate accounts; seal, store, release, and deliver Capsouls; show shared opening progress; process verified purchases and balances; send service notifications; provide optional features; prevent abuse; investigate reports; enforce blocks; support account deletion; and meet legal obligations.</p>
+    <p>We do not sell or rent personal data, and we do not share it with third parties for advertising.</p>
 
-<h2>2. How We Use Your Information</h2>
-<ul>
-  <li>To create, authenticate, and secure your account.</li>
-  <li>To store your capsules and deliver them to you or your selected recipients when the unlock conditions are met.</li>
-  <li>To support shared capsules, including recipient verification, invitations, opening progress, cancellation notices, and unlock notifications.</li>
-  <li>To upload, store, retrieve, and display capsule media and attachments.</li>
-  <li>To send email verification codes, password reset emails, invitation emails, SMS messages, and push notifications.</li>
-  <li>To enable on-device Face ID / biometric gating when you choose to use it. Biometric credentials stay on your device and are not sent to us.</li>
-  <li>To provide optional music recommendation and poster/mood features.</li>
-  <li>To prevent abuse, diagnose issues, maintain service reliability, and comply with legal obligations.</li>
-</ul>
-<p>We do not sell, rent, or share your personal data with third parties for advertising or marketing.</p>
+    <h2>3. Storage and service providers</h2>
+    <p>Capsoul uses Tencent CloudBase and related Tencent Cloud services for authentication support, database, functions, object storage, email, SMS, and optional AI features. Apple provides Sign in with Apple, App Store purchases, and Apple Push Notification service (APNs). Providers process information only as needed to supply these services.</p>
+    <p>Access controls limit a shared capsule to its sender and designated recipients under the product’s release rules. Opened capsules may be saved as local documents and removed from cloud storage as described in the <a href="preservation.html">Paid Preservation Policy</a>.</p>
 
-<h2>3. Data Storage and Service Providers</h2>
-<p>Capsoul currently uses Tencent CloudBase and related Tencent Cloud services to operate the app. This includes CloudBase authentication support, CloudBase database, CloudBase HTTP functions, CloudBase or Tencent Cloud Object Storage for media, Tencent Cloud SMS, Tencent Cloud email services, and CloudBase AI where enabled. Push notifications are delivered through Apple Push Notification service (APNs).</p>
-<p>Your capsule data is protected by access controls so that only the sender and designated recipients can access the capsule according to the app's rules. For shared capsules, contents are not revealed until all required recipients have opened the capsule.</p>
-<p>Capsoul no longer uses Firebase as its production backend.</p>
+    <h2>4. Reports and blocks</h2>
+    <p>A report sends a limited snapshot needed for review: reporter, reported account, relevant capsule reference, category, optional description, and service metadata. Reported users are not told who reported them. Selecting “also block” creates a separate block relationship; blocking can also be managed independently in the app.</p>
+    <p>Report records and their review history are normally retained for <strong>180 days</strong> from closure, and may be kept longer only when reasonably needed for ongoing safety, fraud prevention, dispute handling, or legal compliance. Blocking records remain while the block is active.</p>
 
-<h2>4. Data Retention and Deletion</h2>
-<p>Your account and associated capsules remain stored until you delete them or delete your account. You can request account deletion from within the app (Profile → Delete Account) or by emailing us at the address below. After a verified deletion request, we will delete or anonymize your account data and associated capsule content within 30 days, unless we are required to keep limited records for security, fraud prevention, or legal compliance.</p>
-<p>Some transient records, such as verification codes, reset tokens, and delivery logs, are kept only as long as needed to operate and secure the service.</p>
+    <h2>5. Retention and deletion</h2>
+    <p>Account data and unopened capsule content remain while needed to provide the service, subject to the paid-preservation and release rules. Opened content may become local-only. Verification codes, upload sessions, delivery logs, and other transient records use shorter operational retention periods.</p>
+    <p>You can request account deletion in the app (Profile → Delete Account) or through Support. Following verification, we delete or anonymize account data and associated content within 30 days unless limited records must be retained for security, purchase accounting, safety, dispute, or legal reasons. Local documents already saved on a recipient’s device are controlled by that device and are not removed remotely.</p>
 
-<h2>5. Children's Privacy</h2>
-<p>Capsoul is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+    <h2>6. Your choices</h2>
+    <p>You may access or correct profile data, omit optional media and location, disable notifications in system settings, withdraw an unopened capsule under the app’s rules, unblock an account, and request deletion. A sender controls whom they invite; every user remains responsible for content they save or share.</p>
 
-<h2>6. Third-Party Services</h2>
-<p>We use Tencent CloudBase and related Tencent Cloud services to provide backend, storage, email, SMS, and AI functionality, and Apple Push Notification service to send push notifications. These service providers process information only as needed to provide Capsoul's app functionality. We do not include third-party advertising SDKs.</p>
+    <h2>7. Children</h2>
+    <p>Capsoul is not directed to children under 13, and we do not knowingly collect their personal information. Contact us if you believe a child has provided information so we can review and delete it.</p>
 
-<h2>7. Your Rights and Choices</h2>
-<p>You may access, correct, or delete your personal data at any time through the app where available, or by contacting us. You may choose not to add optional media, location, music, or recipient information. You can also disable push notifications in your device settings.</p>
+    <h2>8. Security and international processing</h2>
+    <p>We apply access controls, verified server operations, and data minimization appropriate to the service. No system can guarantee absolute security. Information may be processed where our service providers operate, subject to applicable safeguards and law.</p>
 
-<h2>8. Changes to This Policy</h2>
-<p>We may update this policy from time to time. We will notify you of significant changes through the app or by email when appropriate. Continued use of Capsoul after changes constitutes acceptance of the revised policy.</p>
+    <h2>9. Changes and contact</h2>
+    <p>We may update this policy and will provide appropriate notice of material changes. Questions or privacy requests may be sent to <a href="mailto:support@capsoul.chat">support@capsoul.chat</a>.</p>
+  </main>
 
-<h2>9. Contact Us</h2>
-<p>If you have questions about this privacy policy or want to exercise your privacy rights, please email us at: <a href="mailto:18210399677@139.com">18210399677@139.com</a></p>
-
-<footer>© 2026 Capsoul. All rights reserved.</footer>
-
+  <footer class="site-footer">
+    <span>© 2026 Capsoul. All rights reserved.</span>
+    <a href="mailto:support@capsoul.chat">support@capsoul.chat</a>
+  </footer>
 </body>
 </html>
