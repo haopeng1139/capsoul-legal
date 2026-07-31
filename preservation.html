@@ -24,39 +24,45 @@
   <main>
     <p class="eyebrow">Shared memory capsule</p>
     <h1>Paid Preservation Policy</h1>
-    <p class="updated">Last updated: July 27, 2026</p>
-    <p class="lede">You pay once when sealing an eligible Shared Capsoul. The quote covers its waiting period until the scheduled opening date; recipients do not pay to receive or open it.</p>
+    <p class="updated">Last updated: July 31, 2026</p>
+    <p class="lede">A sender uses prepaid Memory Months once when sealing an eligible Shared Capsoul for the wait until its scheduled opening date. Recipients do not pay to receive or open it.</p>
 
-    <h2>1. Preservation units</h2>
-    <p>A <strong>Preservation Month</strong> and a <strong>Preservation Year</strong> are consumable App Store products. Each purchase adds one non-expiring unit to the matching balance. Units do not represent a subscription, recurring renewal, stored cash value, or a right to withdraw money.</p>
-    <p>Only the sender pays. The same quote applies regardless of recipient count: sending one shared capsule to one person or to five recipients consumes the same time-based units.</p>
+    <h2>1. Memory Months</h2>
+    <p><strong>Memory Months</strong> are Consumable In-App Purchases. Capsoul offers bundles of 10, 20, or 100 Memory Months, and a verified purchase adds the bundle’s fixed quantity to the sender’s server-owned balance. Unused purchased or granted Memory Months <strong>do not expire</strong>.</p>
+    <p>Memory Months are not a subscription, do not renew automatically, do not represent stored cash value, and cannot be withdrawn, transferred, or exchanged for money. The App Store-localized price shown before purchase is the applicable price; this policy does not promise a fixed storefront price.</p>
+    <p>Only the sender pays. The same Memory Month requirement applies regardless of recipient count: sealing one Shared Capsoul for one recipient or for five recipients uses the same time-based amount.</p>
 
     <h2>2. How a quote is calculated</h2>
-    <p>Capsoul measures <strong>started UTC periods</strong> from the sending instant to the scheduled opening instant. Any started month or year counts as a complete unit. A capsule lasting no more than one month uses one Preservation Month; three months and 17 days uses four Preservation Months.</p>
-    <p>For longer intervals, the app may quote <strong>mixed Preservation Months and Years</strong> when that uses the available unit types appropriately. For example, one year and three months may consume one Preservation Year plus three Preservation Months. A Preservation Year covers an interval of up to one year and is priced more favorably than twelve separately purchased Preservation Months.</p>
-    <p>The server returns the final quote before sealing. The app shows the required combination and current balance, and sealing proceeds only after the sender confirms and has sufficient units.</p>
+    <p>Capsoul uses trusted server time and UTC calendar-month arithmetic from the sealing time to the scheduled opening time. Calendar end-of-month clamping applies, and any <strong>partial final calendar month rounds up</strong> to one Memory Month. Every positive waiting period uses at least one Memory Month.</p>
+    <p>A wait of up to one calendar month uses one Memory Month; three months and 17 days uses four Memory Months; exactly twelve calendar months uses 12 Memory Months. There is <strong>no separate year unit</strong> and no mixed month/year balance or quote.</p>
+    <p>The server returns the final requirement before sealing. The app shows the required Memory Months and current available balance, and paid sealing proceeds only after the sender confirms and has sufficient credits.</p>
 
     <h2>3. Shared-capsule limits</h2>
-    <p>A paid Shared capsule may include up to <strong>500 MB</strong> of content and up to <strong>five recipients</strong>. Recipient-count independence applies within that limit. Personal capsules are not charged under this Shared paid-preservation model.</p>
+    <p>A paid Shared Capsoul may include up to <strong>500 MB</strong> of actual media and up to <strong>five recipients</strong>. Recipient-count independence applies within that limit. Personal Capsouls are not charged under this Shared paid-preservation model.</p>
 
-    <h2>4. Opening and cloud release</h2>
-    <p>At the scheduled time, recipients are notified that the capsule can be opened. In a multi-recipient capsule, participants may receive opening-progress updates. After all required recipients open, Capsoul begins a <strong>24-hour release period</strong> before eligible cloud media is deleted.</p>
-    <p>Opened memories become local documents on the participating devices. After cloud deletion, they may be <strong>local-only and carry recovery risk</strong>: deleting the app or its data, losing or replacing a device, signing out before a completed local save, or losing a backup may permanently lose the local document. Capsoul cannot guarantee server recovery after release.</p>
+    <h2>4. Upload reservation</h2>
+    <p>Before media upload, Capsoul may set aside the quoted credits in a <strong>24-hour upload reservation</strong>. If the upload fails, is abandoned, or remains incomplete when the reservation expires, Capsoul releases the reserved Memory Months and schedules incomplete uploaded objects for cleanup. An expired uncommitted reservation is not a sender withdrawal.</p>
+    <p>Once a Capsoul is successfully sealed, its Memory Months are committed and are not released merely because the sender later withdraws it.</p>
 
-    <h2>5. Withdrawal and expiration</h2>
-    <p>The sender may withdraw an eligible capsule before any recipient opens it. <strong>Withdrawal does not return consumed preservation units.</strong> The units paid for the reserved waiting period are not restored, including when a capsule is withdrawn shortly after sending.</p>
-    <p>If an unregistered recipient does not claim the capsule within the <strong>90-day claim window</strong> after its scheduled opening, their claim may expire under the service rules. This does not return consumed units.</p>
+    <h2>5. Opening, claim window, and local recovery</h2>
+    <p>At the scheduled time, recipients may be notified that the Capsoul can be opened. Each intended recipient has an independent <strong>90-day claim window</strong> beginning at the scheduled opening time. Paid cloud media may be deleted earlier after all intended recipients and the sender have confirmed durable local copies; otherwise eligible paid media may be deleted when the claim deadline expires.</p>
+    <p>A completed claim produces a verified <strong>local .capsoul document</strong>. After cloud cleanup, that local document or a user-managed backup becomes the recovery copy. Deleting the app or its data, losing or replacing a device, or losing the backup may permanently lose the memory, and Capsoul cannot remotely restore a cloud copy after eligible cleanup. Push notifications and their delivery times are not guaranteed.</p>
 
-    <h2>6. App Store refunds and balance debt</h2>
-    <p>Apple decides App Store refund requests. When Apple reports a refunded consumable transaction, Capsoul reverses the units originally credited from that transaction. If they were already spent, the account receives a <strong>same-kind balance debt</strong>: refunded Preservation Months reduce only the month balance, and refunded Preservation Years reduce only the year balance. Future units of that kind satisfy the debt before becoming available.</p>
+    <h2>6. Withdrawal</h2>
+    <p>The sender may withdraw an eligible Shared Capsoul before a recipient completes the durable local-claim boundary, subject to any active download lease. Withdrawal blocks future claims and may schedule cloud media for deletion. <strong>Withdrawal does not return used Memory Months</strong>, including when it occurs shortly after sealing.</p>
+    <p>A local copy already delivered to another person’s device cannot be remotely revoked or deleted.</p>
 
-    <h2>7. Existing users and grants</h2>
-    <p>Capsules created under the legacy policy remain <strong>permanently free</strong>; migration does not make existing users pay to keep or open those capsules. This treatment attaches to eligible legacy capsules and is not a temporary subscription benefit.</p>
-    <p>Eligible Day 1 users receive a one-time grant of <strong>60 Preservation Months and ten Preservation Years</strong>. The owner reviews eligibility before the grant is run. A promotional <strong>Offer Code</strong> is redeemed through Apple and follows Apple’s redemption rules; an <strong>administrative grant</strong> is a separate balance adjustment made by authorized Capsoul operations. Neither changes the treatment of legacy-free capsules.</p>
+    <h2>7. App Store refunds and adjustments</h2>
+    <p>Apple decides App Store refund requests. When Apple reports a refund, Capsoul removes the fixed Memory Month quantity originally granted by that verified transaction from the available balance. If the available balance is insufficient, the shortfall becomes a <strong>Memory Month adjustment debt</strong>. Later purchases, grants, refund reversals, and eligible reservation releases settle that adjustment before increasing the available balance.</p>
+    <p>A refund does not take Memory Months from an active reservation, withdraw a committed Shared Capsoul, delete a delivered local document, or rewrite the append-only ledger. A refund reversal settles any related adjustment first and restores any remainder to availability.</p>
 
-    <h2>8. Records, changes, and help</h2>
-    <p>We maintain transaction and balance-ledger records needed to prevent duplicate credit, reconcile Apple notifications, explain consumption, handle refunds, and investigate disputes. Material policy changes will be communicated as appropriate and do not retroactively convert eligible legacy-free capsules into paid ones.</p>
-    <p>For quote or balance questions, contact <a href="mailto:support@capsoul.chat">support@capsoul.chat</a> and include the account email and capsule or App Store transaction reference when available. Do not send passwords, verification codes, or Apple credentials.</p>
+    <h2>8. Existing users and grants</h2>
+    <p>Capsouls created under the legacy policy remain <strong>permanently free</strong>; migration does not make existing users pay to keep or open those Capsouls. This treatment attaches to eligible legacy Capsouls and is not a temporary subscription benefit.</p>
+    <p>Eligible Day 1 users receive a one-time server-owned grant of exactly <strong>180 Memory Months</strong>. The owner reviews eligibility before the grant stage is run, and an account cannot receive both the superseded full grant and the replacement full grant. An Apple <strong>Offer Code</strong> follows Apple’s redemption and verified-transaction rules; an <strong>administrative grant</strong> is a separate adjustment made by authorized Capsoul operations. Neither changes the treatment of legacy-free Capsouls.</p>
+
+    <h2>9. Records, changes, and help</h2>
+    <p>We maintain transaction and balance-ledger records needed to prevent duplicate credit, reconcile Apple notifications, explain consumption, handle refunds, and investigate disputes. Material policy changes will be communicated as appropriate and do not retroactively convert eligible legacy-free Capsouls into paid ones.</p>
+    <p>For quote or balance questions, contact <a href="mailto:support@capsoul.chat">support@capsoul.chat</a> and include the account email and a Capsoul or App Store transaction reference when available. Do not send passwords, verification codes, receipts containing sensitive account data, JWS payloads, or Apple credentials.</p>
   </main>
 
   <footer class="site-footer">

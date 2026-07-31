@@ -55,20 +55,26 @@ for (const page of requiredPages) {
 const preservationEnglish = readPage("preservation.html");
 const preservationChinese = readPage("preservation-zh.html");
 const preservationContract = [
-  [/started UTC periods/i, /从发送时刻开始的 UTC 周期/],
-  [/mixed preservation months and years/i, /封存月与封存年组合/],
+  [/Memory Months/i, /记忆月/],
+  [/Consumable/i, /消耗型/],
+  [/do not expire/i, /不会过期/],
+  [/not.*subscription/i, /不是订阅/],
+  [/partial final calendar month.*rounds up/i, /最后不足一个完整日历月的部分.*按一个记忆月计算/],
+  [/three months and 17 days.*four Memory Months/i, /三个月零 17 天.*四个记忆月/],
+  [/exactly twelve calendar months.*12 Memory Months/i, /整整十二个日历月.*12 个记忆月/],
+  [/no separate year unit/i, /没有单独的年额度/],
   [/regardless of recipient count/i, /不因接收人数而增加/],
   [/sender.*pays/i, /仅发送方支付/],
   [/500 MB/i, /500 MB/],
   [/five recipients/i, /五位接收方/],
-  [/24-hour release/i, /24 小时释放期/],
+  [/24-hour upload reservation/i, /24 小时上传预约/],
+  [/incomplete.*releases.*reserved Memory Months/i, /未完成.*释放.*预留的记忆月/],
   [/withdrawal.*not return/i, /撤回.*不会退回/],
-  [/same-kind balance debt/i, /同种额度欠额/],
+  [/Memory Month adjustment debt/i, /记忆月退款调整差额/],
   [/90-day claim window/i, /90 天认领窗口/],
-  [/local-only.*recovery risk/i, /仅保存在本地.*恢复风险/],
+  [/local \.capsoul document/i, /本地 \.capsoul 文档/],
   [/permanently free/i, /永久免费/],
-  [/60 preservation months/i, /60 个封存月/],
-  [/ten preservation years/i, /10 个封存年/],
+  [/180 Memory Months/i, /180 个记忆月/],
   [/Offer Code/i, /Offer Code/],
   [/administrative grant/i, /后台人工发放/],
 ];
@@ -76,6 +82,22 @@ const preservationContract = [
 for (const [englishPattern, chinesePattern] of preservationContract) {
   assert.match(preservationEnglish, englishPattern);
   assert.match(preservationChinese, chinesePattern);
+}
+
+for (const page of [
+  "preservation.html",
+  "preservation-zh.html",
+  "terms.html",
+  "terms-zh.html",
+  "support.html",
+  "support-zh.html",
+]) {
+  const html = readPage(page);
+  assert.doesNotMatch(
+    html,
+    /Preservation Years?|Preservation Months?|封存年|封存月|mixed interval|组合时间/i,
+    `${page}: retired month/year product wording`,
+  );
 }
 
 for (const page of ["privacy.html", "privacy-zh.html", "terms.html", "terms-zh.html"]) {
