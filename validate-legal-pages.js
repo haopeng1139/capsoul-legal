@@ -75,7 +75,11 @@ const preservationContract = [
   [/local \.capsoul document/i, /本地 \.capsoul 文档/],
   [/permanently free/i, /永久免费/],
   [/180 Memory Months/i, /180 个记忆月/],
-  [/Offer Code/i, /Offer Code/],
+  [/Memory Membership/i, /记忆会员/],
+  [/auto-renewable subscription/i, /自动续期订阅/],
+  [/paid up front for one year/i, /一次预付一年费用/],
+  [/does not cancel the Apple subscription/i, /不会取消 Apple 订阅/],
+  [/direct WeChat Pay checkout/i, /微信支付直接结账/],
   [/administrative grant/i, /后台人工发放/],
 ];
 
