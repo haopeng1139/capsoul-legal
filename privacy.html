@@ -24,7 +24,7 @@
   <main>
     <p class="eyebrow">Shared memory capsule</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: July 27, 2026</p>
+    <p class="updated">Last updated: August 1, 2026</p>
     <p class="lede">Capsoul is a shared memory capsule for preserving ordinary fragments and reopening them with people you trust. This policy explains what we collect, why we use it, and the choices available to you.</p>
 
     <h2>1. Information we collect</h2>
@@ -32,7 +32,8 @@
       <li><strong>Account and authentication information:</strong> email address, optional phone number, display name, avatar URL, user ID, sign-in method, account timestamps, verification and reset records, and Apple sign-in identifiers when used.</li>
       <li><strong>Capsoul content:</strong> titles, text, emotion designs, photos, videos, voice recordings, files, music references, optional places, unlock timing, and whether the capsule is Personal or Shared.</li>
       <li><strong>Sharing information:</strong> recipient contact details or user IDs, invitations, delivery status, opening status, opening progress, and withdrawal status.</li>
-      <li><strong>Purchases and preservation balances:</strong> product identifiers, verified App Store transaction identifiers, credited and consumed preservation units, quotes, grants, refunds, and reconciliation records. We do not receive your full payment-card details.</li>
+      <li><strong>Purchases, memberships, and preservation balances:</strong> product identifiers, verified App Store transaction and original-transaction identifiers, subscription state and paid period, credited and consumed preservation units, quotes, grants, refunds, and reconciliation records. We do not receive your full payment-card details.</li>
+      <li><strong>Personal-capsule control data:</strong> account-scoped UTC-month quota counters, hashed capsule identifiers, reservation and commit state, encrypted-package integrity values, scheduled opening time, and wrapped-key metadata. Personal payloads and Personal media remain encrypted on your device and are not uploaded to CloudBase.</li>
       <li><strong>Device and service information:</strong> APNs token, platform, app environment, preferred notification language, delivery records, operational logs, and errors needed to secure and troubleshoot the service.</li>
       <li><strong>Optional location and recommendation inputs:</strong> a place name and coordinates you choose, and mood or context supplied for optional music recommendations. Capsoul does not continuously track your location.</li>
       <li><strong>Safety information:</strong> the report category, optional details, capsule and account references, moderation status, and blocking relationships you choose to create.</li>
@@ -44,7 +45,8 @@
 
     <h2>3. Storage and service providers</h2>
     <p>Capsoul uses Tencent CloudBase and related Tencent Cloud services for authentication support, database, functions, object storage, email, SMS, and optional AI features. Apple provides Sign in with Apple, App Store purchases, and Apple Push Notification service (APNs). Providers process information only as needed to supply these services.</p>
-    <p>Access controls limit a shared capsule to its sender and designated recipients under the product’s release rules. Opened capsules may be saved as local documents and removed from cloud storage as described in the <a href="preservation.html">Paid Preservation Policy</a>.</p>
+    <p>Access controls limit a shared capsule to its sender and designated recipients under the product’s release rules. Opened Shared capsules may be saved as local documents and removed from cloud storage as described in the <a href="preservation.html">Paid Preservation Policy</a>.</p>
+    <p>Personal Capsouls are encrypted on-device with AES-256-GCM and stored in local <code>.capsoul</code> packages excluded from cloud backup. Capsoul does not upload the Personal payload or media, provide cloud discovery or synchronization for it, or receive plaintext through encrypted export/import. CloudBase processes only the limited quota and wrapped-key metadata described above.</p>
 
     <h2>4. Reports and blocks</h2>
     <p>A report sends a limited snapshot needed for review: reporter, reported account, relevant capsule reference, category, optional description, and service metadata. Reported users are not told who reported them. Selecting “also block” creates a separate block relationship; blocking can also be managed independently in the app.</p>
@@ -53,6 +55,7 @@
     <h2>5. Retention and deletion</h2>
     <p>Account data and unopened capsule content remain while needed to provide the service, subject to the paid-preservation and release rules. Opened content may become local-only. Verification codes, upload sessions, delivery logs, and other transient records use shorter operational retention periods.</p>
     <p>You can request account deletion in the app (Profile → Delete Account) or through Support. Following verification, we delete or anonymize account data and associated content within 30 days unless limited records must be retained for security, purchase accounting, safety, dispute, or legal reasons. Local documents already saved on a recipient’s device are controlled by that device and are not removed remotely.</p>
+    <p>Signing out removes the signed-in account’s Personal key material from the device and may leave only opaque encrypted packages unless you choose to delete them. After server-side account deletion succeeds, Capsoul attempts to remove that account’s Personal packages, keys, and temporary plaintext from the device. If local cleanup fails, the app reports that the device’s app data should be cleared. If server-side deletion fails, the app keeps the session, packages, and keys so the failure does not destroy local access prematurely.</p>
 
     <h2>6. Your choices</h2>
     <p>You may access or correct profile data, omit optional media and location, disable notifications in system settings, withdraw an unopened capsule under the app’s rules, unblock an account, and request deletion. A sender controls whom they invite; every user remains responsible for content they save or share.</p>
